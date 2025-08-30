@@ -7,9 +7,9 @@ public class Location
     public Guid LocationId { get; private set; }
     public LocationName LocationName { get; private set; }
     public string? Description { get; private set; }
-    public bool IsActive { get; set; }
+    public bool IsActive { get; private set; }
     public DateTime CreateAt { get; private set; }
-    public DateTime UpdateAt { get; set; }
+    public DateTime UpdateAt { get; private set; }
     public IReadOnlyList<Department> Departments { get; private set; } = []; 
 
     private Location(LocationName locationName, string? description,  bool isActive)

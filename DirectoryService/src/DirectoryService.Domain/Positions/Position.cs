@@ -10,23 +10,25 @@ public class Position
     public PositionName PositionName { get; private set; }
     public Address Address { get; private set; }
     public Timezone Timezone { get; private set; }
-    public bool IsActive { get; set; }
+    public bool IsActive { get; private set; }
     public DateTime CreateAt { get; private set; }
-    public DateTime UpdateAt { get; set; }
+    public DateTime UpdateAt { get; private set; }
     
     public IReadOnlyList<Department> Departments { get; private set; } = [];
 
-    private Position (PositionName positionName, bool isActive)
+    private Position (PositionName positionName, bool isActive, Address address, Timezone timezone)
     {
         LocationId = Guid.NewGuid();
         PositionName = positionName;
         IsActive = isActive;
+        Address = address;
+        Timezone = timezone;
         CreateAt = DateTime.Now;
         UpdateAt = DateTime.Now;
     }
-
-    public static Result<Position> Create(PositionName positionName, bool isActive)
+    
+    public static Result<Position> Create(PositionName positionName, bool isActive,  Address address, Timezone timezone)
     {
-        return Result.Success<Position>(new Position(positionName, isActive));
+        return Result.Success<Position>(new Position(positionName, isActive, address, timezone));
     }
 }

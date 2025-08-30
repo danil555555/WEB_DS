@@ -6,7 +6,7 @@ public class Timezone
 {
     private const int MaxLengthName = 150;
     private const int MinLengthName = 3;
-    public string IanaCode { get; set; }
+    public string IanaCode { get; private set; }
 
     private Timezone(string ianaCode)
     {

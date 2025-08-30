@@ -6,7 +6,7 @@ public class PositionName
 {
     private const int MaxLengthName = 150;
     private const int MinLengthName = 3;
-    public string NamePosition { get; set; }
+    public string NamePosition { get; private set; }
 
     private PositionName(string namePosition)
     {

@@ -4,7 +4,7 @@ namespace DirectoryService.Domain.Departments;
 
 public record Path
 {
-    public string Name { get; set; }
+    public string Name { get; private set; }
 
     private Path(string name)
     {

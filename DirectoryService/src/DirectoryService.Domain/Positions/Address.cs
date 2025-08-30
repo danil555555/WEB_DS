@@ -7,12 +7,12 @@ public class Address
     private const int MaxLengthName = 150;
     private const int MinLengthName = 3;
     
-    public string Country { get; set; }
-    public string City { get; set; }
-    public string Street { get; set; }
-    public int NumberStreet { get; set; }
-    public int Room {get; set; }
-    public int PostalCode { get; set; }
+    public string Country { get; private set; }
+    public string City { get; private set; }
+    public string Street { get; private set; }
+    public int NumberStreet { get; private set; }
+    public int Room {get; private set; }
+    public int PostalCode { get; private set; }
 
     private Address(string country, string city, string street, int numberStreet, int room, int postalCode)
     {

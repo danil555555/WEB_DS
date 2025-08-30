@@ -6,7 +6,7 @@ public class LocationName
 {
     private const int MaxLengthName = 150;
     private const int MinLengthName = 3;
-    public string NameLocation { get; set; }
+    public string NameLocation { get; private set; }
 
     private LocationName(string nameLocation)
     {

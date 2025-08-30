@@ -1,6 +1,6 @@
 using CSharpFunctionalExtensions;
 
-namespace DirectoryService.Departments;
+namespace DirectoryService.Domain.Departments;
 
 public class Identifier
 {
