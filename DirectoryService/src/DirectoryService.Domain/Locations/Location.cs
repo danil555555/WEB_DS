@@ -1,0 +1,28 @@
+using CSharpFunctionalExtensions;
+using DirectoryService.Domain.Departments;
+
+namespace DirectoryService.Domain.Locations;
+public class Location
+{
+    public Guid LocationId { get; private set; }
+    public LocationName LocationName { get; private set; }
+    public string? Description { get; private set; }
+    public bool IsActive { get; set; }
+    public DateTime CreateAt { get; private set; }
+    public DateTime UpdateAt { get; set; }
+    public IReadOnlyList<Department> Departments { get; private set; } = []; 
+
+    private Location(LocationName locationName, string? description,  bool isActive)
+    {
+        LocationId = Guid.NewGuid();
+        LocationName = locationName;
+        IsActive = isActive;
+        CreateAt = DateTime.Now;
+        UpdateAt = DateTime.Now;
+    }
+
+    public static Result<Location> Create(LocationName locationName, string? description, bool isActive)
+    {
+        return Result.Success<Location>(new Location(locationName, description, isActive));
+    }
+}
