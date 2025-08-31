@@ -10,7 +10,7 @@ public class Location
     public bool IsActive { get; private set; }
     public DateTime CreateAt { get; private set; }
     public DateTime UpdateAt { get; private set; }
-    public IReadOnlyList<Department> Departments { get; private set; } = []; 
+    public List<DepartmentLocation> DepartmentLocation { get; private set; } = new List<DepartmentLocation>(); 
 
     private Location(LocationName locationName, string? description,  bool isActive)
     {

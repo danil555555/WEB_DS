@@ -30,6 +30,29 @@ public class Address
         {
             return Result.Failure<Address>("Country cannot be empty");
         }
+        if (string.IsNullOrEmpty(city))
+        {
+            return Result.Failure<Address>("City cannot be empty");
+        }
+        if (string.IsNullOrEmpty(street))
+        {
+            return Result.Failure<Address>("Street cannot be empty");
+        }
+
+        if (numberStreet < 0)
+        {
+            return Result.Failure<Address>("NumberStreet cannot be negative");
+        }
+
+        if (room < 0)
+        {
+            return Result.Failure<Address>("Room cannot be negative");
+        }
+
+        if (postalCode < 0)
+        {
+            return Result.Failure<Address>("PostalCode cannot be negative");
+        }
         return Result.Success<Address>(new Address(country, city, street, numberStreet, room, postalCode));
     }
 }

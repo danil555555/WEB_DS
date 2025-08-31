@@ -16,10 +16,10 @@ public class Department
     public DateTime CreateAt { get; private set; }
     public DateTime UpdateAt { get; private set; }
 
-    public IReadOnlyList<Position> Positions { get; private set; } = [];
-    public IReadOnlyList<Location> Locations { get; private set; } = [];
-    
-    private Department( DepartmentName departmentName, Identifier identifier,
+    public List<DepartmentPosition> DepartmentPosition { get; private set; } = new List<DepartmentPosition>(); 
+    public List<DepartmentLocation> DepartmentLocation { get; private set; } = new List<DepartmentLocation>();
+
+    public Department( DepartmentName departmentName, Identifier identifier,
         Guid? parentId, Path path,short depth, bool isActive)
     {
         DepartmentId = Guid.NewGuid();
@@ -31,10 +31,5 @@ public class Department
         IsActive = isActive;
         CreateAt = DateTime.Now;
         UpdateAt = DateTime.Now;
-    }
-    public static Result<Department> Create(DepartmentName departmentName, Identifier identifier,
-        Guid? parentId, Path path, short depth, bool isActive)
-    {
-        return Result.Success<Department>(new Department(departmentName, identifier, parentId, path, depth, isActive));
     }
 }

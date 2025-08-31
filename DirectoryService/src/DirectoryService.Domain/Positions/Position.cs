@@ -14,7 +14,7 @@ public class Position
     public DateTime CreateAt { get; private set; }
     public DateTime UpdateAt { get; private set; }
     
-    public IReadOnlyList<Department> Departments { get; private set; } = [];
+    public List<DepartmentPosition> DepartmentPosition { get; private set; } = new List<DepartmentPosition>();
 
     private Position (PositionName positionName, bool isActive, Address address, Timezone timezone)
     {
