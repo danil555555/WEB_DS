@@ -5,6 +5,9 @@ namespace DirectoryService.Domain.Departments;
 
 public class Identifier
 {
+    private Identifier()
+    {
+    }
     private const int MaxLengthValue = 150;
     private const int MinLengthValu = 3;
     public const string pattern = "[A - Za - z]";

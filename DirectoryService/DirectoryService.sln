@@ -8,7 +8,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryService.Contracts"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryService.Presenters", "src\DirectoryService.Presenters\DirectoryService.Presenters.csproj", "{2D9DD397-C248-432A-9468-BB192BDD2F22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryService.Web", "src\DirectoryService.Web\DirectoryService.Web.csproj", "{5E10BDC2-6358-41CF-95AC-7BCEA5628624}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryService.Infrastructure.Postgres", "src\DirectoryService.Infrastructure.Postgres\DirectoryService.Infrastructure.Postgres.csproj", "{2ECFA861-C31D-4C5F-83AF-C7550F42CE9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryService.Web", "src\DirectoryService.Web\DirectoryService.Web.csproj", "{4AA95825-35CA-4566-96E3-550B37DA5287}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,15 +30,20 @@ Global
 		{2D9DD397-C248-432A-9468-BB192BDD2F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D9DD397-C248-432A-9468-BB192BDD2F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D9DD397-C248-432A-9468-BB192BDD2F22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E10BDC2-6358-41CF-95AC-7BCEA5628624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E10BDC2-6358-41CF-95AC-7BCEA5628624}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E10BDC2-6358-41CF-95AC-7BCEA5628624}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E10BDC2-6358-41CF-95AC-7BCEA5628624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ECFA861-C31D-4C5F-83AF-C7550F42CE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECFA861-C31D-4C5F-83AF-C7550F42CE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECFA861-C31D-4C5F-83AF-C7550F42CE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECFA861-C31D-4C5F-83AF-C7550F42CE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA95825-35CA-4566-96E3-550B37DA5287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA95825-35CA-4566-96E3-550B37DA5287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA95825-35CA-4566-96E3-550B37DA5287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA95825-35CA-4566-96E3-550B37DA5287}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6502189F-9315-4769-B101-86B8BE96A285} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
 		{AD2E2933-226B-4858-8603-D11E0A60D835} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
 		{2D9DD397-C248-432A-9468-BB192BDD2F22} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
-		{5E10BDC2-6358-41CF-95AC-7BCEA5628624} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
+		{2ECFA861-C31D-4C5F-83AF-C7550F42CE9B} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
+		{4AA95825-35CA-4566-96E3-550B37DA5287} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
 	EndGlobalSection
 EndGlobal
