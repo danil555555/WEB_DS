@@ -6,6 +6,10 @@ namespace DirectoryService.Domain.Departments;
 
 public class Department
 {
+    private Department()
+    {
+        
+    }
     public Guid DepartmentId { get; private set; }
     public DepartmentName DepartmentName { get; private set; }
     public Identifier Identifier { get; private set; }
@@ -16,10 +20,10 @@ public class Department
     public DateTime CreateAt { get; private set; }
     public DateTime UpdateAt { get; private set; }
 
-    public List<DepartmentPosition> DepartmentPosition { get; private set; } = new List<DepartmentPosition>(); 
-    public List<DepartmentLocation> DepartmentLocation { get; private set; } = new List<DepartmentLocation>();
+    public List<DepartmentPosition> DepartmentPositions { get; private set; } = []; 
+    public List<DepartmentLocation> DepartmentLocations { get; private set; } = [];
 
-    public Department( DepartmentName departmentName, Identifier identifier,
+    private Department( DepartmentName departmentName, Identifier identifier,
         Guid? parentId, Path path,short depth, bool isActive)
     {
         DepartmentId = Guid.NewGuid();

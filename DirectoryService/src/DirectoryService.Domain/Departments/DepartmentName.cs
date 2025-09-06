@@ -4,11 +4,17 @@ namespace DirectoryService.Domain.Departments;
 
 public record DepartmentName
 {
+
+
     private const int MaxLengthName = 150;
     private const int MinLengthName = 3;
     public string NameDepartment { get; private set; }
-    
-    private DepartmentName(string nameDepartment)
+
+    private DepartmentName()
+    {
+        
+    }
+    public DepartmentName(string nameDepartment)
     {
         NameDepartment = nameDepartment;
     }

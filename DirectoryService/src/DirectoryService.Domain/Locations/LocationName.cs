@@ -4,6 +4,9 @@ namespace DirectoryService.Domain.Locations;
 
 public class LocationName
 {
+    private LocationName()
+    {
+    }
     private const int MaxLengthName = 150;
     private const int MinLengthName = 3;
     public string NameLocation { get; private set; }

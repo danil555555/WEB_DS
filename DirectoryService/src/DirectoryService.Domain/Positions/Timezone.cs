@@ -4,6 +4,9 @@ namespace DirectoryService.Domain.Positions;
 
 public class Timezone
 {
+    private Timezone()
+    {
+    }
     private const int MaxLengthName = 150;
     private const int MinLengthName = 3;
     public string IanaCode { get; private set; }

@@ -4,6 +4,9 @@ namespace DirectoryService.Domain.Positions;
 
 public class Address
 {
+    private Address()
+    {
+    }
     private const int MaxLengthName = 150;
     private const int MinLengthName = 3;
     
