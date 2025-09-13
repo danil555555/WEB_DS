@@ -1,7 +1,6 @@
 using CSharpFunctionalExtensions;
 
-namespace DirectoryService.Domain.Positions;
-
+namespace DirectoryService.Domain.Locations;
 public class Timezone
 {
     private Timezone()
