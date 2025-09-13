@@ -22,6 +22,8 @@ public class DepartmentConfigurations : IEntityTypeConfiguration<Department>
                 .HasColumnName("identifier")
                 .IsRequired();
         });
+        
+
         builder.OwnsOne(d => d.Path, dn =>
         {
             dn.Property(n => n.Name)

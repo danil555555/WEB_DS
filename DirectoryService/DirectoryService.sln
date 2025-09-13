@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryService.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryService.Web", "src\DirectoryService.Web\DirectoryService.Web.csproj", "{4AA95825-35CA-4566-96E3-550B37DA5287}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryService.Application", "src\DirectoryService.Application\DirectoryService.Application.csproj", "{2B7A3878-A35C-4C95-866F-3BC15CD89A9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{4AA95825-35CA-4566-96E3-550B37DA5287}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AA95825-35CA-4566-96E3-550B37DA5287}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AA95825-35CA-4566-96E3-550B37DA5287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7A3878-A35C-4C95-866F-3BC15CD89A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7A3878-A35C-4C95-866F-3BC15CD89A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7A3878-A35C-4C95-866F-3BC15CD89A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7A3878-A35C-4C95-866F-3BC15CD89A9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6502189F-9315-4769-B101-86B8BE96A285} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
@@ -45,5 +51,6 @@ Global
 		{2D9DD397-C248-432A-9468-BB192BDD2F22} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
 		{2ECFA861-C31D-4C5F-83AF-C7550F42CE9B} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
 		{4AA95825-35CA-4566-96E3-550B37DA5287} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
+		{2B7A3878-A35C-4C95-866F-3BC15CD89A9C} = {F6A0340C-5DF8-4E48-AAF7-11E977957E47}
 	EndGlobalSection
 EndGlobal
